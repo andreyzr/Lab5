@@ -20,7 +20,6 @@ namespace HW5
             {
                 for (int j = 0; j < m; j++)
                 {
-                    t[i, j] = random.Next(0, 2);
                     Console.Write("{0,4}", t[i, j]);
                 }
                 Console.WriteLine();
