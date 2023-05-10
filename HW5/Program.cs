@@ -15,11 +15,11 @@ namespace HW5
             int n = N; //Кол строк
             int m = N;//Кол столбцов
             int[,] t = new int[n, m];
-            Random random = new Random();
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
                 {
+                    t[i, j]=(i + j) % 2 == 0 ? 1 : 0;
                     Console.Write("{0,4}", t[i, j]);
                 }
                 Console.WriteLine();
